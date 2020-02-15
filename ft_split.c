@@ -75,8 +75,8 @@ static char	*ft_get_word(char *s, char c, char **words, int x)
 	if (!word)
 	{
 		ft_free_mem(words, x);
-		return (0);
-	
+		return (NULL);
+	}
 	while (i < word_len)
 	{
 		word[i] = s[i];
@@ -93,20 +93,20 @@ char		**ft_split(const char *s, char c)
 	char		**words;
 
 	if (!s)
-		return (0);
-	if (!words)
-		return (0);
+		return (NULL);
 	x = 0;
 	word_amount = ft_count_words(s, c);
 	words = (char **)malloc(sizeof(char *) * (word_amount + 1));
+	if (!words)
+		return (NULL);
 	while (x < word_amount)
 	{
 		s = ft_get_word_pos(s, c, x);
 		words[x] = ft_get_word((char *)s, c, words, x);
-		if (words[x] == 0)
-			return (0);
+		if (words[x] == NULL)
+			return (NULL);
 		x++;
 	}
-	words[x] = 0;
+	words[x] = NULL;
 	return (words);
 }
