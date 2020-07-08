@@ -1,2 +1,2 @@
 # libft
-Codam libft project
+This is the first project of Codam, libft.
