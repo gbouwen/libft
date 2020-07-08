@@ -6,7 +6,7 @@
 #    By: gbouwen <marvin@codam.nl>                    +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/10/28 13:23:35 by gbouwen       #+#    #+#                  #
-#    Updated: 2019/11/20 13:35:13 by gbouwen       ########   odam.nl          #
+#    Updated: 2020/07/08 15:35:39 by gbouwen       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,4 +61,4 @@ bonus: $(NAME) $(BONUS_O)
 	@ar rc $(NAME) $(BONUS_O) $?
 	@echo "$(GREEN)Succesfully added to library!"
 
-.PHONY: all clean clean re bonus
+.PHONY: all clean fclean re bonus
