@@ -80,7 +80,7 @@ You must recode the following functions, using the function `malloc`:
   *Finally, the pointer to the list must be set to NULL.*
 - `void ft_lstiter(t_list *lst, void (*f)(void *))`  
   *Iterates the list lst and applies the function f to the content of each element.*
-- `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
+- `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`  
   *Iterates the list lst and applies the function f to the content of each element.*  
   *Creates a new listresulting of the successive applications of the function f.*  
   *The del function is here to delete the content of an element if needed*  
