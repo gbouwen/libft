@@ -1,2 +1,2 @@
 # Libft
-A library written in C
+A library written in C.
